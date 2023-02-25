@@ -23,3 +23,7 @@ footer{
 .move-to-center{
   text-align: center;
 }
+.container{
+  display: inline-grid;
+  grid-template-columns: 2fr 1fr;
+}
