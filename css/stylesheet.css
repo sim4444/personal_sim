@@ -1,11 +1,15 @@
-h1{
-  color: #0000B3;
+header{
+  background: lightskyblue;
 }
 body{
-    background-color: #F9B5A9;
+  background-color: lightpink;
 }
-nav{
-  text-align: center; 
+footer{
+  background: lightskyblue;
+}
+.flex-container{
+  
+
 }
 .heading-index{
   font-family: "Montserrat",sans-serif;
