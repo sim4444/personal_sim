@@ -1,16 +1,12 @@
-header{
-  background:#8ED1FA;
-}
 body{
   background-color: #ffb6c1;
   color:black;
 }
+header{
+  background:#8ED1FA;
+}
 footer{
   background: #8ED1FA;
-}
-img{
-  height: auto;
-  max-width: 100%;
 }
 .links-styling{
   list-style-type: none ;
@@ -34,13 +30,13 @@ img{
   grid-template-columns: 2fr 1fr;
   column-gap: 20px;
 }
-.item3{
-  grid-column: 1/2;
-  grid-row: 2/3;
-}
-img{
+#move-image{
   height: auto;
   max-width: 100%;
   grid-column: 2/3;
   grid-row: 1/2;
+}
+.item3{
+  grid-column: 1/2;
+  grid-row: 2/3;
 }
