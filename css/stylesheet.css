@@ -12,9 +12,11 @@ footer{
   padding: 0px;
   display:flex;
   justify-content: center;
-  
 }
-
+.links-styling a{
+  padding: 10px;
+  display: inline-flex;
+}
 .heading-index{
   font-family: "Montserrat",sans-serif;
 }
