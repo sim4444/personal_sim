@@ -10,6 +10,9 @@ footer{
 .links-styling{
   list-style-type: none ;
   padding: 0px;
+  display:flex;
+  justify-content: center;
+  
 }
 
 .heading-index{
