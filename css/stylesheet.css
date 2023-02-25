@@ -7,10 +7,10 @@ body{
 footer{
   background: lightskyblue;
 }
-.flex-container{
-  
-
+.links-styling{
+  list-style-type: none ;
 }
+
 .heading-index{
   font-family: "Montserrat",sans-serif;
 }
