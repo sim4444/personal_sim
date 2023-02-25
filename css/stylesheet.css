@@ -1,13 +1,12 @@
 h1{
-    color: #0B1493;
-  }
+  color: #0000B3;
+}
 body{
-    background-color:#C2FF1A;
+    background-color: #F9B5A9;
 }
 nav{
-  background-color: pink;
-  text-align: center;
+  text-align: center; 
 }
 .heading-index{
-  font-family: "Montserrat" , sans-serif ;
+  font-family: "Montserrat",sans-serif;
 }
