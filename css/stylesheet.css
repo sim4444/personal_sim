@@ -24,7 +24,10 @@ footer{
   text-align: center;
 }
 .container{
-  display: inline-grid;
+  display: grid;
   grid-template-columns: 2fr 1fr;
   column-gap: 20px;
+}
+.item4{
+  grid-column:1/2;
 }
