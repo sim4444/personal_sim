@@ -1,5 +1,5 @@
 body{
-  background-color: #ffb6c1;
+  background-color: bisque;
   color:black;
 }
 header{
@@ -34,6 +34,9 @@ footer{
 .container_new_fraction{
   display: grid;
 }
+.border_line{
+  border-bottom: gray solid 2px;
+}
 #move-image{
   height: auto;
   max-width: 100%;
@@ -49,6 +52,7 @@ footer{
   grid-column: 1/2;
   grid-row: 2/3;
 }
+
 @media screen and (min-width: 600px) {
   .links-styling{
       flex-direction: row;
@@ -57,5 +61,12 @@ footer{
   .container_new_fraction{ 
     grid-template-columns: 1fr 2fr;
     column-gap: 5px;
+  }
+  .border_line{
+    border-bottom: black solid 2px;
+  }
+  .item_style{
+    padding-top:18px;
+   
   }
 }
