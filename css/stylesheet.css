@@ -12,7 +12,8 @@ footer{
   list-style-type: none ;
   /* padding: 0px; */
   display:flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 .links-styling a{
   color: #121FA5;
