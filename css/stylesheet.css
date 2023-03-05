@@ -28,7 +28,11 @@ footer{
 }
 .container{
   display: grid;
-  
+  grid-template-columns: 2fr 1fr;
+  column-gap: 15px;
+}
+.container_new_fraction{
+  display: grid;
 }
 #move-image{
   height: auto;
@@ -36,7 +40,12 @@ footer{
   grid-column: 2/3;
   grid-row: 1/2;
 }
-.item3{
+/* .item2{
+  grid-column: 1/2;
+  grid-row: 2/3;
+
+} */
+.item{
   grid-column: 1/2;
   grid-row: 2/3;
 }
@@ -45,9 +54,8 @@ footer{
       flex-direction: row;
       justify-content: center;
   }
-  .container{
-    grid-template-columns: 2fr 1fr;
-    column-gap: 20px;
-
+  .container_new_fraction{ 
+    grid-template-columns: 1fr 2fr;
+    column-gap: 5px;
   }
 }
