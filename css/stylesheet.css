@@ -28,8 +28,7 @@ footer{
 }
 .container{
   display: grid;
-  grid-template-columns: 2fr 1fr;
-  column-gap: 20px;
+  
 }
 #move-image{
   height: auto;
@@ -45,5 +44,10 @@ footer{
   .links-styling{
       flex-direction: row;
       justify-content: center;
+  }
+  .container{
+    grid-template-columns: 2fr 1fr;
+    column-gap: 20px;
+
   }
 }
