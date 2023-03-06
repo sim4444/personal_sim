@@ -1,9 +1,9 @@
 const courseList = [c0,c1,c2,c4,c5];
-let c0 = {code:"ACIT 1420", name :"Intro to System Administration"};
-let c1 = {code:"ACIT 1620", name :"Web Technologies"};
-let c2 = {code:"ACIT 1630", name :"Database"};
-let c4 = {code:"ACIT 1515", name :"Scripting"};
-let c5 = {code:"COMM 1116", name :"Business Communication"};
+let c0 = {code:"1420", name :"Intro to System Administration"};
+let c1 = {code:"1620", name :"Web Fundamental Technologies"};
+let c2 = {code:"1630", name :"Database"};
+let c4 = {code:"1515", name :"Scripting"};
+let c5 = {code:"1116", name :"Business Communication"};
 // console.log(user_answer);
 // console.log(alert(user_answer));
 let user_answer = promt("Please enter a 4-digit number: ");
@@ -14,8 +14,15 @@ do{
 
 };
 for (let item of courseList){
-    
-}
+    if (item.code==="1620"){
+        console.log(`Yes I am taking the course:ACIT ${item.code} - "Web Fundamental Fundamental"`);
+    }
+    else{
+        let c6={code:"1620", name :"Web Fundamental Technologies"};
+        courseList.push(c6);
+        console.log(courseList);
+    }
+};
 
 
 
