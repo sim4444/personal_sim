@@ -4,7 +4,13 @@ let c1 = {code:"ACIT 1620", name :"Web Technologies"};
 let c2 = {code:"ACIT 1630", name :"Database"};
 let c4 = {code:"ACIT 1515", name :"Scripting"};
 let c5 = {code:"COMM 1116", name :"Business Communication"};
-
+let user_answer = promt("Please enter a 4-digit number: ");
+if (user_answer (isNaN)){
+    console.log(`This entry : ${user_answer} is invalid. Please enter again:`)
+}
+else{
+    console.log(alert('Hello'))
+}
 
 
 
