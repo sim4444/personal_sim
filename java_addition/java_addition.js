@@ -1,9 +1,9 @@
 const courseList = [c0,c1,c2,c4,c5];
-let c0 = {code:"ACIT 1420", name :"Intro to System Administration"}
-let c1 = {code:"ACIT 1620", name :"Web Technologies"}
-let c2 = {code:"ACIT 1630", name :"Database"}
-let c4 = {code:"ACIT 1515", name :"Scripting"}
-let c5 = {code:"COMM 1116", name :"Business Communication"}
+let c0 = {code:"ACIT 1420", name :"Intro to System Administration"};
+let c1 = {code:"ACIT 1620", name :"Web Technologies"};
+let c2 = {code:"ACIT 1630", name :"Database"};
+let c4 = {code:"ACIT 1515", name :"Scripting"};
+let c5 = {code:"COMM 1116", name :"Business Communication"};
 
 
 
