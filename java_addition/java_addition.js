@@ -1,48 +1,31 @@
-const courseList = [c0,c1,c2,c4,c5];
-let c0 = {code:"1420", name :"Intro to System Administration"};
-let c1 = {code:"1620", name :"Web Fundamental Technologies"};
-let c2 = {code:"1630", name :"Database"};
-let c4 = {code:"1515", name :"Scripting"};
-let c5 = {code:"1116", name :"Business Communication"};
+const courseList = [course1,course2,course3,course4,course5];
+let course1 = {code:"1420", name :"Intro to System Administration"};
+let course2 = {code:"1620", name :"Web Fundamental Technologies"};
+let course3 = {code:"1630", name :"Database"};
+let course4 = {code:"1515", name :"Scripting for IT"};
+let course5 = {code:"1310", name :"Technical Mathematics for IT"};
+let user_answer = prompt("Please enter a 4-digit number: ");
+
 // console.log(user_answer);
 // console.log(alert(user_answer));
-let user_answer = promt("Please enter a 4-digit number: ");
-do{
-    user_answer = promt("Please enter a 4-digit number: ");
-}while(user_answer.length !== 4 && user_answer === (isNaN)){
-    console.log(`This entry : ${user_answer} is invalid. Please enter again:`)
 
+// do{
+//     user_answer = prompt("Please enter a 4-digit number: ");
+//     if (user_answer === null && user_answer.length !== 4 || isNaN(user_answer)){
+//         console.log(`This entry : ${user_answer} is invalid. Please enter again:`)
+//     }
+// }
+while(user_answer.length !== 4 || isNaN(user_answer)){
+    console.log(`This entry : ${user_answer} is invalid. Please enter again:`)
 };
 for (let item of courseList){
-    if (item.code==="1620"){
-        console.log(`Yes I am taking the course:ACIT ${item.code} - "Web Fundamental Fundamental"`);
+    if (item.code===user_answer){
+        console.log(`Yes I am taking the course: ACIT ${item.code} - ${item.name}`);
     }
-    else{
-        let c6={code:"1620", name :"Web Fundamental Technologies"};
-        courseList.push(c6);
-        console.log(courseList);
-    }
+    break
 };
-
-
-
-// else{
-//     console.log(alert('Hello'))
-// }
-
-
-
-// function my_courses(code,name){
-//     this.code=code;
-//     this.name=name;
-// }
-// const c0 = new my_courses("ACIT 1420","Intro to System Administration")
-// const c1 = new my_courses("ACIT 1620","Web Technologies")
-// const c2 = new my_courses("ACIT 1630","Database")
-// const c4 = new my_courses("ACIT 1515","Scripting")
-// const c5 = new my_courses("COMM 1116","Business Communication")
-// console.log(c0);
-// console.log(c0);
-// console.log(c0);
-// console.log(c0);
-// console.log(c0);
+if(item.code!==user_answer){
+        let new_course = {code:user_answer, name :null};
+        courseList.push(new_course);
+        console.log(`Your new course #${user_answer}has been successfully added to the courseList`);
+};
