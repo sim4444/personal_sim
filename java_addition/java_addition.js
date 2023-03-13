@@ -22,7 +22,7 @@ while(user_answer.length !== 4 || isNaN(user_answer)){
     user_answer = prompt("Please enter a 4-digit number again: ");
 }
 
-let courseMatch = true;
+let courseMatch = false;
 
 for (const item of courseList){
     if (item.code.includes(user_answer)){
@@ -33,7 +33,8 @@ for (const item of courseList){
 
 }
 if(!courseMatch){
-        let new_course = {code:user_answer, name :null};
+        let new_course = {code:`ACIT:${user_answer}`, name :null};
         courseList.push(new_course);
-        console.log(`Your new course #${user_answer}has been successfully added to the courseList`);
+        console.log(`Your new course ${new_course.code} has been successfully added to the courselist`);
 }
+// console.log(courseList)
