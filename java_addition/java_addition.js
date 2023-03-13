@@ -1,8 +1,8 @@
-let course1 = {code:"1420", name :"Intro to System Administration"};
-let course2 = {code:"1620", name :"Web Fundamental Technologies"};
-let course3 = {code:"1630", name :"Database"};
-let course4 = {code:"1515", name :"Scripting for IT"};
-let course5 = {code:"1310", name :"Technical Mathematics for IT"};
+let course1 = {code:"1420", name :"Intro to System Administration"}
+let course2 = {code:"1620", name :"Web Fundamental Technologies"}
+let course3 = {code:"1630", name :"Database"}
+let course4 = {code:"1515", name :"Scripting for IT"}
+let course5 = {code:"1310", name :"Technical Mathematics for IT"}
 
 const courseList = [course1,course2,course3,course4,course5];
 
@@ -20,15 +20,20 @@ let user_answer = prompt("Please enter a 4-digit number: ");
 while(user_answer.length !== 4 || isNaN(user_answer)){
     console.log(`${user_answer} is an invalid entry. Please enter again!!`);
     user_answer = prompt("Please enter a 4-digit number again: ");
-};
-for (let item of courseList){
+}
+
+let courseMatch = true;
+
+for (const item of courseList){
     if (item.code.includes(user_answer)){
         console.log(`Yes I am taking the course: ACIT ${item.code} - ${item.name}`);
+        courseMatch = true;
+        break;
     }
-    break
-};
-if(item.code!==user_answer){
+
+}
+if(!courseMatch){
         let new_course = {code:user_answer, name :null};
         courseList.push(new_course);
         console.log(`Your new course #${user_answer}has been successfully added to the courseList`);
-};
+}
