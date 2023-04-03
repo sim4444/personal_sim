@@ -58,14 +58,14 @@ function createCourseArray(){
 
 // creating a function which accepts the array as value
 function findCourse(arr_courses){
-//     do{
-//         user_answer = prompt("Please enter a 4-digit number: ");
-//         if (user_answer === null && user_answer.length !== 4 || isNaN(user_answer)){
-//             console.log(`This entry : ${user_answer} is invalid. Please enter again:`)
-//         }
-//     }
-//     while(user_answer.length !== 4 || isNaN(user_answer))
-//     let courseMatch = false;
+    do{
+        user_answer = prompt("Please enter a 4-digit number: ");
+        if (user_answer === null && user_answer.length !== 4 || isNaN(user_answer)){
+            console.log(`This entry : ${user_answer} is invalid. Please enter again:`)
+        }
+    }
+    while(user_answer.length !== 4 || isNaN(user_answer))
+    let courseMatch = false;
 
 //     for (const item of courseList){
 //         if (item.code.includes(user_answer)){
@@ -80,7 +80,7 @@ function findCourse(arr_courses){
 //             courseList.push(new_course);
 //             console.log(`Your new course ${new_course.code} has been successfully added to the courselist`);
 //     }
-// }
+}
 
 
 
