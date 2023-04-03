@@ -38,6 +38,65 @@ if(!courseMatch){
         courseList.push(new_course);
         console.log(`Your new course ${new_course.code} has been successfully added to the courselist`);
 }
+
+
+// creating a function which return an array of JS objects
+
+function createCourseArray(){
+    const arr_courses=[];
+    let divs = document.querySelectorAll('div');
+    for (div of divs){
+        let course_name = div.querySelectorAll('p').textContent;
+        let course_date= div.querySelectorAll('p').textContent;
+        const course = {code:course_name , date: course_date };
+        arr_courses.push(course);
+    }
+    console.log(arr_courses);
+    return arr_courses;
+}
+
+
+// creating a function which accepts the array as value
+// function findCourse(arr_courses){
+//     do{
+//         user_answer = prompt("Please enter a 4-digit number: ");
+//         if (user_answer === null && user_answer.length !== 4 || isNaN(user_answer)){
+//             console.log(`This entry : ${user_answer} is invalid. Please enter again:`)
+//         }
+//     }
+//     while(user_answer.length !== 4 || isNaN(user_answer))
+//     let courseMatch = false;
+
+//     for (const item of courseList){
+//         if (item.code.includes(user_answer)){
+//             console.log(`Yes I am taking the course: ACIT ${item.code} - ${item.name}`);
+//             courseMatch = true;
+//             break;
+//         }
+
+//     }
+//     if(!courseMatch){
+//             let new_course = {code:`ACIT:${user_answer}`, name :null};
+//             courseList.push(new_course);
+//             console.log(`Your new course ${new_course.code} has been successfully added to the courselist`);
+//     }
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // console.log(courseList)
 
 // createCourseArray function
