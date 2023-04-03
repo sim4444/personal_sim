@@ -57,7 +57,7 @@ function createCourseArray(){
 
 
 // creating a function which accepts the array as value
-// function findCourse(arr_courses){
+function findCourse(arr_courses){
 //     do{
 //         user_answer = prompt("Please enter a 4-digit number: ");
 //         if (user_answer === null && user_answer.length !== 4 || isNaN(user_answer)){
