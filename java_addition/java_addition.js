@@ -77,6 +77,19 @@ function findCourse(array_courses) {
     const main_html_page = document.querySelector("main");
     let new_elem = document.createElement("div");
 
+    let para1 = document.createElement("p");
+    para1.textContent = `ACIT ${user_answer} - Course Name`;
+    new_elem.appendChild(para1);
+
+    let para2 = document.createElement("p");
+    para2.textContent = course_date;
+    para2.classList.add('item')
+    new_elem.appendChild(para2);
+
+    let para3 = document.createElement("p");
+    para3.textContent = course_description;
+    para3.classList.add('item_style')
+    new_elem.appendChild(para3);
     
     main_html_page.appendChild(new_elem);
 

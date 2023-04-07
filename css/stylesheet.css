@@ -38,10 +38,7 @@ footer{
 .change_color{
   background: green;
 }
-.container{
-  border-top:  gray solid 2px;
-  
-}
+
 @media screen and (min-width: 600px) {
   .links-styling{
       flex-direction: row;
@@ -66,11 +63,6 @@ footer{
     grid-column: 2/3;
     grid-row: 1/2;
   }
-  .container{
-    border-top: black solid 2px;
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    column-gap: 7px;
-  }
+  
 
 }
