@@ -60,16 +60,26 @@ const arr_courses1 = createCourseArray();
 function findCourse(array_courses) {
   let user_answer;
   do {
-    user_answer = prompt("Please enter a 4-digit number: ")
+    user_answer = prompt("Please enter a 4-digit number: ");
   } while (user_answer.length !== 4 || isNaN(user_answer));
   let course_match = false;
   for (const course of array_courses) {
     if (course.code.includes(user_answer)) {
       const area = document.getElementById(user_answer);
-      console.log(area)
-      area.classList.add('change_color')
+      console.log(area);
+      area.classList.add("change_color");
       course_match = true;
     }
+  }
+  if (!course_match === true) {
+    let course_description = "N/A";
+    let course_date = "Fall 2020";
+    const main_html_page = document.querySelector("main");
+    let new_elem = document.createElement("div");
+
+    
+    main_html_page.appendChild(new_elem);
+
   }
 }
 findCourse(arr_courses1);
