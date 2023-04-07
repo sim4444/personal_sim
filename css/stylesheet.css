@@ -65,6 +65,11 @@ footer{
     grid-column: 2/3;
     grid-row: 1/2;
   }
-  
+  .container{
+    border-top: black solid 2px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 7px;
+  }
 
 }
