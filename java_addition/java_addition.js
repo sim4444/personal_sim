@@ -46,6 +46,15 @@ function createCourseArray(){
     const arr_courses=[];
     let container_list = document.querySelectorAll('div');
     console.log(container_list)
+    for (container of container_list){
+        let course_name=container.querySelector('.course_code').textContent
+        let date_info=container.querySelector('.item').textContent
+        let course={code: course_name, date: date_info}
+        console.log(course)
+        
+    }
+    
+    
     
 }
 array_courses = createCourseArray()
