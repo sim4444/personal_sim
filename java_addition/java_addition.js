@@ -13,9 +13,9 @@
 
 // do{
 //     user_answer = prompt("Please enter a 4-digit number: ");
-    // if (user_answer === null && user_answer.length !== 4 || isNaN(user_answer)){
-    //     console.log(`This entry : ${user_answer} is invalid. Please enter again:`)
-    // }
+// if (user_answer === null && user_answer.length !== 4 || isNaN(user_answer)){
+//     console.log(`This entry : ${user_answer} is invalid. Please enter again:`)
+// }
 // }
 // while(user_answer.length !== 4 || isNaN(user_answer))
 // {
@@ -38,14 +38,12 @@
 //         console.log(`Your new course ${new_course.code} has been successfully added to the courselist`);
 // }
 
-
-
 // creating a function which return an array of JS objects
 function createCourseArray() {
   const arr_courses = [];
   let container_list = document.querySelectorAll("div");
   console.log(container_list);
-  for (container of container_list) {
+  for (const container of container_list) {
     let course_name = container.querySelector(".course_code").textContent;
     let date_info = container.querySelector(".item").textContent;
     let course = { code: course_name, date: date_info };
@@ -59,16 +57,19 @@ function createCourseArray() {
 const arr_courses1 = createCourseArray();
 
 // creating a function which accepts the array as value
-function findCourse(arr_courses1) {
-    do{
-        user_answer = prompt("Please enter a 4-digit number: ");
+function findCourse(array_courses) {
+  let user_answer;
+  do {
+    user_answer = prompt("Please enter a 4-digit number: ")
+  } while (user_answer.length !== 4 || isNaN(user_answer));
+  let course_match = false;
+  for (const course of array_courses) {
+    if (course.code.includes(user_answer)) {
+      const area = document.getElementById(user_answer);
+      console.log(area)
+      area.classList.add('change_color')
+      course_match = true;
     }
-    while(user_answer.length !== 4 || isNaN(user_answer));
-    for (course of arr_courses1){
-        if(course.code.includes(user_answer)){
-            
-        }
-    }
+  }
 }
-findCourse();
-
+findCourse(arr_courses1);
