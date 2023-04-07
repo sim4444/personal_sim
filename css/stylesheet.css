@@ -38,7 +38,9 @@ footer{
 .change_color{
   background: green;
 }
-
+.container{
+  border-top:  gray solid 2px;
+}
 @media screen and (min-width: 600px) {
   .links-styling{
       flex-direction: row;

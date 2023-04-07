@@ -91,6 +91,7 @@ function findCourse(array_courses) {
     para3.classList.add('item_style')
     new_elem.appendChild(para3);
     
+    new_elem.classList.add('container')
     main_html_page.appendChild(new_elem);
 
   }
