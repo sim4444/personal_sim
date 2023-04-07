@@ -48,7 +48,7 @@ function createCourseArray(){
     console.log(container_list)
     
 }
-
+array_courses = createCourseArray()
 // let a=document.querySelector('button')
 // a.addEventListener
 // creating a function which accepts the array as value
