@@ -51,7 +51,8 @@ function createCourseArray(){
         let date_info=container.querySelector('.item').textContent
         let course={code: course_name, date: date_info}
         console.log(course)
-        
+        arr_courses.push(course)
+        console.log(arr_courses)
     }
     
     
