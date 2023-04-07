@@ -64,7 +64,11 @@ function findCourse(arr_courses1) {
         user_answer = prompt("Please enter a 4-digit number: ");
     }
     while(user_answer.length !== 4 || isNaN(user_answer));
-    
+    for (course of arr_courses1){
+        if(course.code.includes(user_answer)){
+            
+        }
+    }
 }
 findCourse();
 
